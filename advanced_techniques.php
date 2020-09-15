@@ -4,7 +4,7 @@ $hello = function (){
     echo "Hello";
 };
 
-//echo $hello();
+echo $hello() . PHP_EOL;
 // closure = anonymous function that can acces variables imported from outside scope without modifying original value
 $counter = 0;
 // we pass counter here ,, NOTE that (&$counter) will modify the value of counter since its passing by reference
@@ -22,7 +22,7 @@ function factorial($n){
     }
     return $n * factorial($n - 1);
 }
-echo factorial(5);
+echo factorial(5) . PHP_EOL;
 
 // internationalization UTF-8
 
