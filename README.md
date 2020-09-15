@@ -1,2 +1,2 @@
 # PHP
-Repository for all my php projects
+Repository for mastering php 7 code
