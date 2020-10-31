@@ -2,7 +2,7 @@
 
 //Scalar type declaration
 declare(strict_types = 1);
-// strict mode ensures that argument paased to getMoney() must be of type int
+// strict mode ensures that argument passed to getMoney() must be of type int
 
 function getMoney(int $value){
     var_dump($value);

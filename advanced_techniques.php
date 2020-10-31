@@ -5,7 +5,7 @@ $hello = function (){
 };
 
 echo $hello() . PHP_EOL;
-// closure = anonymous function that can acces variables imported from outside scope without modifying original value
+// closure = anonymous function that can access variables imported from outside scope without modifying original value
 $counter = 0;
 // we pass counter here ,, NOTE that (&$counter) will modify the value of counter since its passing by reference
 $closure = function () use ($counter){
