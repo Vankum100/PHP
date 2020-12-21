@@ -64,6 +64,8 @@ Placeholders are quite *'easy to use'* though some need optimizations.
 
 | Snippet | Output |
 | --- | --- |
+| ad | `$var = value;` |
+| asd | `$var = "...";`|
 | eco | `echo "...";` |
 | inc | `include __DIR__.'...';` |
 | inco | `include_once __DIR__.'...';` |
