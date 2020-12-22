@@ -1,6 +1,46 @@
 <?php
 // Inheritance and Abstract classes
 // HAS-A and IS-A relationship
+interface Newsletter
+{
+    public function subscribe($email);
+}
+
+class campaignMonitor implements Newsletter
+{
+    public function subscribe($email)
+    {
+        print('subscribing with Campaign Monitor'. PHP_EOL);
+    }
+}
+
+
+class guardianPost implements Newsletter
+{
+    public function subscribe( $email)
+    {
+        print('subscribing with Guardian Post' .PHP_EOL);
+    }
+}
+
+
+class NewsletterSubscriptionController
+{
+    public function store(Newsletter $newsletter)
+    {
+        
+        $email = 'john@example.com';
+
+        $newsletter->subscribe($email);
+    }
+}
+
+
+$controller = new NewsletterSubscriptionController();
+
+$controller->store(new CampaignMonitor());
+
+$controller->store(new GuardianPost());
 abstract class User {
     protected $name;
     protected $email;

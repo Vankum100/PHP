@@ -39,3 +39,28 @@ some of this text is "escaped" and that's  the number. it's $number
 DEMO;
 
 echo $text;
+
+
+class ConstructorSnippet
+{
+     // insert constructor 
+    protected $generated;
+
+    protected $anothorparam;
+
+    public function __construct($generated, $anothorparam)
+    {
+        $this->generated = $generated;
+        $this->anothorparam = $anothorparam;
+    }
+
+    
+   
+    //spread params for a variable length of arguments    
+    public static function name(...$params)
+    {
+        return new static(...$params);
+    }
+}
+
+

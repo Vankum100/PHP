@@ -8,6 +8,13 @@ use PHPUnit\Framework\TestCase;
 
 class PrimeFactorsTest extends TestCase
 {
+
+    /** @test */
+    public function test_passed()
+    {
+        $this->assertTrue(true);
+    }
+    
     /** 
      * @test 
      * @dataProvider factors 
@@ -30,5 +37,9 @@ class PrimeFactorsTest extends TestCase
         ];
     }
 }
+
+
+
+
 
 ?>
