@@ -1,5 +1,6 @@
 <?php
 
+
 //Scalar type declaration
 declare(strict_types = 1);
 // strict mode ensures that argument passed to getMoney() must be of type int
